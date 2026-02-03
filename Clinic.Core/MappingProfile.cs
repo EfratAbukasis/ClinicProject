@@ -8,6 +8,7 @@ namespace Clinic.Core
 {
     public class MappingProfile : Profile
     {
+        // Data mapping between different application layers
         public MappingProfile()
         {
             // מיפוי עבור תורים

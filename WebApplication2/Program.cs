@@ -21,7 +21,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddDbContext<Clinic.Data.DataContext>(options =>
     options.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=Clinic_DB;Trusted_Connection=True;"));
 
-// 3. הזרקת תלויות (DI) - החלפתי את הסטודנטים ברופאים ומטופלים של הקליניקה
+
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 
 //builder.Services.AddScoped<IDoctorService, DoctorService>();
